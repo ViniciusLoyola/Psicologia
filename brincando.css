@@ -1,0 +1,162 @@
+body  {
+    background-image: url("https://image.freepik.com/fotos-gratis/a-parte-da-estatua-de-buda-antiga-face-dourada-sobre-fundo-branco_41689-85.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right; 
+    }
+
+
+a, a:hover, a:visited, a:focus, a:active{
+        text-decoration: none;       
+        color: inherit; 
+    }
+
+
+h1 {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 430%;
+    color: rgb(22, 194, 88);     
+}
+
+
+h2 {
+    text-align: center;
+    color: rgb(0, 153, 255);
+    font-family:    'Permanent Marker', cursive;
+    font-weight: 100; 
+    font-size: 2em;
+    }
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+
+
+.subResp {
+    display: none;
+}
+
+.itensNav {
+    display: inline-flex;
+    padding: 10px;
+    font-size: 15px;
+    font-family:    'Permanent Marker', cursive;
+    background-color: rgb(51, 17, 204);
+    color: #fff;
+}
+
+.itensNav:hover {
+    background-color: rgb(0, 153, 255);
+    font-size: 100%;
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 200%;
+   
+}
+
+.botao {
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: blue;
+    font-family: cursive;
+    box-shadow: 2px 2px 1px 1px #000000;
+    overflow-x: scroll;
+}
+
+.botao:active{
+    box-shadow: none;
+}
+#BotAudio1, #BotAudio2, #BotAudio3, #BotAudio4, #BotAudio5, #voltarTopo1, #voltarTopo2, #voltarTopo3, #voltarTopo4, #voltarTopo5 {
+    color: #fff;
+    overflow: hidden;
+}
+
+#BotAudio3 {
+    width: 30%;
+    overflow: hidden;
+}
+
+footer {
+    margin-top: 1000px;
+    text-align: center;
+}
+
+.menu-toggle {
+    color: #eeeeee;
+    background-color: rgb(0, 153, 255);
+    border: solid 1px #777;
+    border-radius: 5px;
+    padding: 10px 20px;
+    height: 40px;
+    margin: 20px 15px;
+    display: block;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 800px) {
+    background-image {
+        display: none;
+    }
+    .itensNav {
+        display: none;
+    }
+}
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) {
+   .itensNav{
+        display: none;
+    }
+    /* estilos aqui */
+}
+
+@media (max-width: 611px) {
+    p {
+        width: 100%;
+        margin-left: 5%;
+    }
+   img {
+       display: none;
+   }
+}
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 1250px) {
+    .itensNav{
+        display: none;
+    }
+    
+    img{
+        display: none;
+    }
+}
+
+@media (min-width: 1251px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+
+
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+   
+}
+
+
+#mapa {
+    height:400px;
+    width:400px;
+  }

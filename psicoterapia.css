@@ -1,0 +1,262 @@
+#faixatopo {
+    height: 20px;
+    background-color: rgb(57, 167, 130);
+}
+
+h1, h2 {
+    font-family: 'Allura', cursive;
+}
+
+h1 {
+    font-size: 2.7em;
+    margin-bottom: 0%;
+    padding-left: 3%;
+}
+h2 {
+    font-size: 1.5em;
+    margin-top: 0%;
+    padding-left: 3%;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2%;
+    padding-top: 2%;
+}
+
+.contato {
+    position:absolute;
+    top: 28px;
+    right: 20px;
+    width: 145px;
+    height: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.contatoWhats {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#menu {
+    width: 70%;
+    margin-inline-start: 15%;
+    margin-inline-end: 15%;
+    padding-inline-start: 0%;
+    display: flex; 
+}
+
+.itensNav {
+    margin: 2px;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3vw;
+    display: flex;
+    flex-flow: row nowrap;  
+    flex-grow: 1;       
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.secoes {
+    width: 70%;
+    max-width: 1200px;
+    background-color: rgb(147, 233, 204, 0.2);
+    height: 400px;
+    margin-left: 15%;    
+}
+
+article {
+    text-align: justify;
+    width: 50%;
+    padding: 0% 3% 2% 3%;
+    display:  inline-block;    
+}
+
+#paragsobre p{
+    font-size: 0.9em;
+}
+
+#paragsobre p::first-letter {
+    font-size: 200%;
+    margin-left: 15%;
+}
+
+#menu a, #menu a:visited, #menu a:focus, #menu a:active{
+    text-decoration: none;       
+    color: inherit; 
+    display: flex;
+    flex-direction: column;
+}
+
+#menu a:hover {
+    background-color:  rgb(57, 167, 130);
+}
+
+#imagemSobre {
+    width: 35%;
+    height: 70%;
+    float: right;
+    display: inline-block;
+    top: 2%;
+    padding: 2% 6% 2% 3%;
+    filter: drop-shadow(5px 5px 4px rgb(48, 46, 46));   
+    opacity: 0.9;        
+}
+
+#Servicos p {
+    text-align: center;
+    font-size: 1.3em;
+    word-spacing: 1.4em;
+    margin-top: 10%;
+    display: none;
+}
+
+#Servicos ul{
+    margin-inline-start: 5%;    
+    margin-inline-end: 5%;
+    padding-inline-start: 0%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch
+    
+}
+#Servicos li {
+    display: inline-block;
+    margin: 2px;
+    padding: 2% 4.7%;
+    font-size: 1em;
+    background-color: rgb(57, 167, 130);
+    display: flex;
+    justify-content: stretch;
+    flex-grow: 1;
+   
+}
+
+#Servicos ul li:hover {
+    /*background-color:rgb(57, 167, 130);*/
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#Servicos ul li a, #Servicos ul li:visited, #Servicos ul li:focus, #Servicos ul li:active {
+    text-decoration: none;       
+    color: inherit; 
+}
+
+#Psicologos ul {
+    text-decoration: none;
+    list-style: none;
+    margin-inline-start: 3%;
+    margin-inline-end: 0%;
+}
+
+#Psicologos ul li {
+    border-bottom: 2px solid #000;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    word-spacing: 1.2em;
+}
+
+#Psicologos ul li:hover {
+    background-color: rgb(147, 233, 204);
+
+}
+
+.contrato {
+    width: 70%;
+    height: 400px;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    height: 60px;
+    background-color: rgb(57, 167, 130);
+    text-align: center;
+    margin: 0%;
+    margin-top: 2%;    
+}
+
+
+@media (max-width: 1024px) {
+    #imagemSobre{
+        display: none;
+    }
+
+    article {
+        width: 90%;
+    }
+
+    .secoes {
+        height: auto;
+    }
+        
+}
+
+@media (max-width: 768px) {
+    ul {
+        margin-inline-start: 10%;
+    }
+
+    /*.itensNav {
+        font-size: 1em;
+        margin: 10px;
+    }*/
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    
+
+    ul {
+        margin-inline-start: 0%;
+        padding: 0px;
+    }
+
+    .contato {
+        font-size: 0.7em;
+        right: 0px;
+        width: 130px;
+    }
+
+    #paragsobre p{
+        font-size: 0.8em;
+        
+    }
+    
+    .secoes {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 375px) {
+    ul{
+        padding-inline-start: 0px;
+    }
+    
+    
+}
